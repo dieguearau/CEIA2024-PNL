@@ -6,10 +6,10 @@ En este repositorio se encuentran los desafíos resueltos del curso Procesamient
 
 ## Desafío 1: Análisis de similitud entre documentos
 
-Este proyecto implementa un análisis de textos basado en técnicas de PNL y algoritmos de clasificación para resolver un desafío de clasificación de documentos y análisis de palabras. Está dividido en tres partes principales:
+Se implementa un análisis de textos basado en técnicas de PNL y algoritmos de clasificación para resolver un desafío de clasificación de documentos y análisis de palabras. Está dividido en tres partes principales:
 
 1. **Análisis de similitud entre documentos:** Implementación de un modelo para identificar documentos similares utilizando TF-IDF y métricas de similitud coseno.
-2. **Entrenamiento y ajuste de modelos Naive Bayes:** Desarrollo y optimización de modelos de clasificación (MultinomialNB y ComplementNB) para maximizar el F1-Score.
+2. **Entrenamiento y ajuste de modelos Naive Bayes:** Desarrollo y optimización de modelos de clasificación (MultinomialNB y ComplementNB) para maximizar el F1-Score macro.
 3. **Análisis de similitud entre palabras:** Identificación de palabras más similares a partir de una matriz término-documento generada mediante TF-IDF.
 
 #### Características principales
@@ -22,5 +22,36 @@ Este proyecto implementa un análisis de textos basado en técnicas de PNL y alg
     - Selección manual de términos relevantes para evitar términos irrelevantes en la comparación.
 
 El notebook con la solución se encuentra en [Desafío 1](https://github.com/dieguearau/CEIA2024-PNL/blob/main/Desaf%C3%ADo%201/Soluci%C3%B3n_Desafio_1.ipynb).
+
+## Desafío 2: Vectores con Gensim
+
+Se desarrolla un análisis de texto basado en embeddings generados con Word2Vec de Gensim. Se utiliza el texto de La Odisea de Homero como dataset para explorar relaciones semánticas entre palabras, probar analogías y visualizar agrupamientos en el espacio de vectores.
+
+El código aborda los siguientes objetivos:
+
+- **Generación de embeddings personalizados:** Creación de representaciones vectoriales para las palabras en el texto.
+- **Exploración de relaciones semánticas:** Evaluación de términos relevantes en el espacio vectorial mediante pruebas de similitud y analogías.
+- **Visualización de vectores:** Reducción de dimensionalidad y gráficos 2D/3D para interpretar el espacio de embeddings.
+
+#### Características principales
+
+- **Preprocesamiento de texto:**
+    - Tokenización con text_to_word_sequence de Keras.
+    - Generación de embeddings con Word2Vec en modo Skip-Gram, con parámetros ajustados:
+        - Dimensionalidad: 300.
+        - Contexto: 10 palabras antes y después.
+        - Frecuencia mínima: 10 ocurrencias.
+
+- **Pruebas semánticas:**
+     - **Similitud entre palabras:** Identificación de los términos más y menos relacionados con palabras clave como "nave" y "viaje".
+
+- **Pruebas de analogías:**
+    - Ejemplo: ``mar + orilla - tierra → playa.``
+    - Ejemplo: ``Odiseo + Calipso - esposa → ninfa.``
+
+- **Visualización de vectores:** 
+    - Gráficos 2D y 3D utilizando técnicas como Incremental PCA y t-SNE para interpretar agrupamientos y relaciones en el espacio de vectores.
+    - Ejemplo: Relación entre "Odiseo", "Telemaco" y "Atenea".
+
 
 
