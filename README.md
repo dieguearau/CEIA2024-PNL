@@ -8,16 +8,16 @@ En este repositorio se encuentran los desafíos resueltos del curso Procesamient
 
 Este proyecto implementa un análisis de textos basado en técnicas de PNL y algoritmos de clasificación para resolver un desafío de clasificación de documentos y análisis de palabras. Está dividido en tres partes principales:
 
-1. Análisis de similitud entre documentos: Implementación de un modelo para identificar documentos similares utilizando TF-IDF y métricas de similitud coseno.
-2. Entrenamiento y ajuste de modelos Naive Bayes: Desarrollo y optimización de modelos de clasificación (MultinomialNB y ComplementNB) para maximizar el F1-Score.
-3. Análisis de similitud entre palabras: Identificación de palabras más similares a partir de una matriz término-documento generada mediante TF-IDF.
+1. **Análisis de similitud entre documentos:** Implementación de un modelo para identificar documentos similares utilizando TF-IDF y métricas de similitud coseno.
+2. **Entrenamiento y ajuste de modelos Naive Bayes:** Desarrollo y optimización de modelos de clasificación (MultinomialNB y ComplementNB) para maximizar el F1-Score.
+3. **Análisis de similitud entre palabras:** Identificación de palabras más similares a partir de una matriz término-documento generada mediante TF-IDF.
 
 #### Características principales
-- Preprocesamiento de texto: utiliza técnicas como vectorización con TF-IDF para extraer características del texto.
-- Clasificación supervisada: modelos implementados: 
-    - MultinomialNB y ComplementNB.
+- **Preprocesamiento de texto:** utiliza técnicas como vectorización con TF-IDF para extraer características del texto.
+- **Clasificación supervisada:** 
+    - Modelos implementados: MultinomialNB y ComplementNB.
     - Optimización de hiperparámetros usando Optuna para maximizar el rendimiento en un conjunto de prueba.
-- Análisis de palabras:
+- **Análisis de palabras:**
     - Transposición de la matriz documento-término para analizar similitudes entre palabras.
     - Selección manual de términos relevantes para evitar términos irrelevantes en la comparación.
 
