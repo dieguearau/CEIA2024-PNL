@@ -55,5 +55,45 @@ El código aborda los siguientes objetivos:
 
 El notebook con la solución se encuentra en [Desafío 2](https://github.com/dieguearau/CEIA2024-PNL/blob/main/Desaf%C3%ADo%202/Soluci%C3%B3n_Desafio_2.ipynb).
 
+## Desafío 3: Modelado de Lenguaje con RNN
+
+En este proyecto se implementa un modelo de generación de lenguaje natural utilizando redes neuronales recurrentes (RNN) para explorar el comportamiento del modelo al generar texto y evaluar su capacidad para aprender patrones lingüísticos.
+
+El código aborda los siguientes objetivos principales:
+
+1. **Entrenamiento de un modelo de lenguaje:** 
+    - Basado en RNNs o sus variantes.
+    - Optimización para minimizar la perplejidad, una métrica que mide la calidad de predicción del modelo.
+2. **Generación de texto:**
+    - Producción de secuencias de palabras utilizando el modelo entrenado.
+    - Ajuste de hiperparámetros como temperatura y métodos de búsqueda (beam search, muestreo aleatorio) para controlar la diversidad de texto.
+3. **Visualización del rendimiento:**
+    - Análisis de la perplejidad durante el entrenamiento para evaluar el aprendizaje y la generalización del modelo.
+
+#### Características principales
+
+- **Preprocesamiento de texto:**
+    - Tokenización y secuenciación de datos de texto.
+    - Codificación y padding para normalizar las entradas del modelo.
+
+- **Entrenamiento del modelo:**
+     - Optimización para minimizar la pérdida y la perplejidad en los conjuntos de entrenamiento y validación.
+     - Estrategia de early stopping para evitar sobreajuste.
+
+- **Generación de texto**
+    - **Ajuste de temperatura:** Control de la aleatoriedad en las palabras generadas.
+    - **Beam search:** Implementación de búsquedas determinísticas y con muestreo aleatorio para explorar mejores secuencias.
+
+- **Evaluación de resultados:** 
+    - Análisis de coherencia y diversidad en las secuencias generadas.
+    - Comparación del impacto de los hiperparámetros en las salidas del modelo.
+
+El notebook con la solución se encuentra en [Desafío 3](https://github.com/dieguearau/CEIA2024-PNL/blob/main/Desaf%C3%ADo%203/Soluci%C3%B3n_Desafio_3.ipynb).
+
+
+
+
+
+
 
 
