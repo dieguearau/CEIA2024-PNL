@@ -53,5 +53,7 @@ El código aborda los siguientes objetivos:
     - Gráficos 2D y 3D utilizando técnicas como Incremental PCA y t-SNE para interpretar agrupamientos y relaciones en el espacio de vectores.
     - Ejemplo: Relación entre "Odiseo", "Telemaco" y "Atenea".
 
+El notebook con la solución se encuentra en [Desafío 2](https://github.com/dieguearau/CEIA2024-PNL/blob/main/Desaf%C3%ADo%202/Soluci%C3%B3n_Desafio_2.ipynb).
+
 
 
