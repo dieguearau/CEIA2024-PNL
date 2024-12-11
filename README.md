@@ -121,7 +121,7 @@ El código aborda los siguientes objetivos principales:
     - Métricas de desempeño: pérdida categórica y precisión.
 
 - **Inferencia de respuestas**
-    - Respuesta generada palabra por palabra, comenzando con un token de inicio (<sos>) y terminando con un token de fin (<eos>).
+    - Respuesta generada palabra por palabra, comenzando con un token de inicio (\<sos\>) y terminando con un token de fin (\<eos\>).
     - Implementación de una función para procesar preguntas y generar respuestas.
 
 #### Ejemplo de resultados
