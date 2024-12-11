@@ -90,6 +90,53 @@ El código aborda los siguientes objetivos principales:
 
 El notebook con la solución se encuentra en [Desafío 3](https://github.com/dieguearau/CEIA2024-PNL/blob/main/Desaf%C3%ADo%203/Soluci%C3%B3n_Desafio_3.ipynb).
 
+## Desafío 4: Traducción Automática y Chatbot
+
+Este proyecto implementa un sistema de traducción automática y generación de respuestas utilizando una arquitectura de codificador-decodificador (Encoder-Decoder) basada en redes LSTM. El enfoque principal es entrenar un modelo para generar respuestas contextualmente apropiadas a preguntas en lenguaje natural.
+
+El código aborda los siguientes objetivos principales:
+
+1. **Entrenamiento de un modelo de traducción:** 
+    - Uso de redes LSTM con embeddings de palabras para codificación y decodificación de secuencias.
+    - Optimización para minimizar la pérdida categórica.
+2. **Inferencia para generación de respuestas:**
+    - Uso de un modelo codificador para generar representaciones vectoriales de las preguntas.
+    - Generación de respuestas token por token mediante el modelo decodificador.
+3. **Evaluación de respuestas generadas:**
+    - Análisis cualitativo de las respuestas obtenidas y ajustes al modelo.
+
+#### Características principales
+
+- **Preprocesamiento de texto:**
+    - Tokenización y mapeo de palabras a índices.
+    - Alineación de secuencias de entrada y salida mediante padding para normalización.
+
+- **Construcción del modelo:**
+    - Arquitectura de codificador con una capa LSTM para capturar contextos.
+    - Decodificador con LSTM para generar secuencias de salida.
+    - Capa densa con activación softmax para la predicción de palabras.
+
+- **Entrenamiento del modelo:**
+    - Ajuste de pesos en 50 épocas utilizando un 20% de los datos para validación.
+    - Métricas de desempeño: pérdida categórica y precisión.
+
+- **Inferencia de respuestas**
+    - Respuesta generada palabra por palabra, comenzando con un token de inicio (<sos>) y terminando con un token de fin (<eos>).
+    - Implementación de una función para procesar preguntas y generar respuestas.
+
+#### Ejemplo de resultados
+1.  Pregunta: "How are you?"
+    Respuesta generada: "i m fine"
+
+2.  Pregunta: "Do you read?"
+    Respuesta generada: "i love to read"
+
+3.  Pregunta: "Where are you from?"
+    Respuesta generada: "i am in the army"
+
+
+El notebook con la solución se encuentra en [Desafío 4](https://github.com/dieguearau/CEIA2024-PNL/blob/main/Desaf%C3%ADo%204/Soluci%C3%B3n_desaf%C3%ADo_4.ipynb).
+
 
 
 
